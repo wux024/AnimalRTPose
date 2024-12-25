@@ -60,8 +60,8 @@ The pretrained model can be downloaded from [here](https://drive.google.com/driv
 4. Test the trained model:
 ``` 
 python tools/pose_val.py --dataset animalpose --models n --seed 1234
-python tools/pose_modify_categories_id.py --dataset animalpose
-python tools/pose_coco_eval.py --dataset animalpose --models n
+python tools/pose_modify_categories_id_fast.py --dataset animalpose --model-type animalrtpose
+python tools/pose_coco_eval_fast.py --dataset animalpose --model-type animalrtpose 
 ```
 
 5. The evaluation results will be saved in the `runs/animalrtpose/eval/animalpose/animalrtpose-n` folder.
